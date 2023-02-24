@@ -1,0 +1,21 @@
+<Draggable class="col" v-model="element.fields" item-key="id" handle=".handle-container div" :set="parent_element = element" @end="onDragEnd">
+  <template #item="{element, index}">
+    <div class="row form-group" :ref="'field' + element.id" tabindex="-1">
+      <div class="col-auto handle-container">
+        <div>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" class="handle" tabindex="-1"><use xlink:href="#grip_vertical"></use></svg>
+        </div>
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" v-model="element.key">
+      </div>
+      <div class="col">
+        <textarea rows="3" cols="10" class="form-control" v-model="element.value"></textarea>
+      </div>
+      <div class="col-auto control">
+        <BlockController :blocks="parent_element.fields" :element="element" :iscontainer="0" :index="index" :ref="'blockcontroller' + element.id" />
+      </div>
+    </div>
+  </template>
+</Draggable>
+<button type="button" class="btn btn-primary btn-sm dialog-chooser" v-on:click="addField(element, 'Dl')">追加</button>
