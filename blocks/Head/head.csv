@@ -1,5 +1,5 @@
 ﻿block_label,block_template,block_use_field,block_use_multi_block,block_use_editor,block_data_definition,block_field_data_definition,block_component_name,block_status,block_enable_blocks
-見出し,"<input type=""text"" v-model=""element.text"" class=""form-control"">
+見出し,"<input type=""text"" v-model=""element.text"" class=""form-control"" :id=""element.id"">
 <div class=""mt-2"">
   <label class=""custom-control custom-radio"">
     <input class=""custom-control-input"" type=""radio"" v-model.number=""element.level"" :value=""2"">
