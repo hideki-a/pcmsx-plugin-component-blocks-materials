@@ -3,5 +3,4 @@ export interface Practice {
     type: string;
     family: string;
     given: string;
-    useMultiBlock: boolean;
 }

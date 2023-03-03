@@ -8,5 +8,4 @@ export interface Dl {
     id: string;
     type: string;
     fields: DlFIeld[];
-    useMultiBlock: boolean;
 }

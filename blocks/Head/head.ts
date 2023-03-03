@@ -3,5 +3,4 @@ export interface Head {
     type: string;
     text: string;
     level: number;
-    useMultiBlock: boolean;
 }
