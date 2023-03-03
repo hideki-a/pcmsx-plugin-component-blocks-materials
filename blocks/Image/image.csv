@@ -1,0 +1,7 @@
+﻿block_label,block_template,block_use_field,block_use_multi_block,block_use_editor,block_data_definition,block_field_data_definition,block_component_name,block_status,block_enable_blocks
+画像,"<div class=""row"">
+  <div class=""col-12"">
+    <AssetSelector :element=""element"" :index=""index"" />
+  </div>
+</div>
+",0,0,0,"[{""key"":""asset_id"",""type"":""number"",""defaultValue"":null}]","[{""key"":"""",""type"":""テキスト"",""defaultValue"":null}]",Image,2,

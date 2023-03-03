@@ -1,0 +1,9 @@
+﻿block_label,block_template,block_use_field,block_use_multi_block,block_use_editor,block_data_definition,block_field_data_definition,block_component_name,block_status,block_enable_blocks
+テキスト,"<Editor
+  <mt:if name=""component_blocks_tinymce_api_key"">api-key=""<mt:var name=""component_blocks_tinymce_api_key"" escape />""</mt:if>
+  :init=""store.initTextEditor""
+  v-model=""element.text""
+  class=""form-control inline-mce text""
+  :id=""element.id""
+/>
+",0,0,1,"[{""key"":""text"",""type"":""text"",""defaultValue"":""""}]","[{""key"":"""",""type"":""text"",""defaultValue"":null}]",Text,2,
