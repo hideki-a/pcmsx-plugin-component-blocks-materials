@@ -1,0 +1,29 @@
+<div class="form-inline mb-3">
+  <label>見出し幅 <input type="number" v-model.number="element.heading_width" class="form-control form-control-sm" />%</label>
+</div>
+<Draggable class="col" v-model="element.fields" item-key="id" handle=".handle-container div" :set="parent_element = element">
+  <template #item="{element, index}">
+    <div class="row form-group" :ref="'field' + element.id" tabindex="-1">
+      <div class="col-auto handle-container">
+        <div>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" tabindex="-1"><use xlink:href="#grip_vertical"></use></svg>
+        </div>
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" v-model="element.th">
+      </div>
+      <div class="col">
+        <Editor
+          <mt:if name="component_blocks_tinymce_api_key">api-key="<mt:var name="component_blocks_tinymce_api_key" escape />"</mt:if>
+          :init="store.initTextEditor"
+          v-model="element.td"
+          class="form-control inline-mce text"
+        />
+      </div>
+      <div class="col-auto control">
+        <BlockController :blocks="parent_element.fields" :element="element" :iscontainer="0" :index="index" :ref="'blockcontroller' + element.id" />
+      </div>
+    </div>
+  </template>
+</Draggable>
+<button type="button" class="btn btn-primary btn-sm dialog-chooser" v-on:click="addField(element, 'Table')">追加</button>

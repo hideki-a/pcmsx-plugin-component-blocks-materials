@@ -1,0 +1,3 @@
+﻿block_label,block_template,block_use_field,block_use_multi_block,block_use_editor,block_data_definition,block_field_data_definition,block_component_name,block_status,block_enable_blocks
+マルチブロック,"<MultiBlockEdit :element=""element"" :enableblocks=""enableBlocks"" />
+",0,1,0,"[{""key"":"""",""type"":""テキスト"",""defaultValue"":null}]","[{""key"":"""",""type"":""テキスト"",""defaultValue"":null}]",MultiBlockExample,2,

@@ -1,0 +1,4 @@
+<div class="table-wrap">
+  <table :class="'js-table a-table-' + element.id" v-html="element.table"></table>
+</div>
+<textarea style="display: none;" :class="'a-table-textarea-' + element.id" v-model="element.table"></textarea>

@@ -1,0 +1,6 @@
+﻿block_label,block_template,block_use_field,block_use_multi_block,block_use_editor,block_data_definition,block_field_data_definition,block_component_name,block_status,block_enable_blocks
+表（a-table.js）,"<div class=""table-wrap"">
+  <table :class=""'js-table a-table-' + element.id"" v-html=""element.table""></table>
+</div>
+<textarea style=""display: none;"" :class=""'a-table-textarea-' + element.id"" v-model=""element.table""></textarea>
+",0,0,0,"[{""key"":""table"",""type"":""text"",""defaultValue"":""<tr><td>cell</td></tr>""}]",[],ATable,2,
