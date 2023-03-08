@@ -19,5 +19,5 @@
     </div>
   </template>
 </Draggable>
-<button type=""button"" class=""btn btn-primary btn-sm dialog-chooser"" v-on:click=""addField(element, 'Dl')"">追加</button>
+<button type=""button"" class=""btn btn-primary btn-sm dialog-chooser"" v-on:click=""addField(element, 'Dl')"">{{ $t(""addField"") }}</button>
 ",1,0,0,"[{""key"":"""",""type"":""テキスト"",""defaultValue"":null}]","[{""key"":""key"",""type"":""text"",""defaultValue"":null},{""key"":""value"",""type"":""text"",""defaultValue"":null}]",Dl,2,

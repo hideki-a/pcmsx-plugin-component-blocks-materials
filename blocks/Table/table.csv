@@ -27,5 +27,5 @@
     </div>
   </template>
 </Draggable>
-<button type=""button"" class=""btn btn-primary btn-sm dialog-chooser"" v-on:click=""addField(element, 'Table')"">追加</button>
+<button type=""button"" class=""btn btn-primary btn-sm dialog-chooser"" v-on:click=""addField(element, 'Table')"">{{ $t(""addField"") }}</button>
 ",1,0,1,"[{""key"":""heading_width"",""type"":""number"",""defaultValue"":null}]","[{""key"":""th"",""type"":""text"",""defaultValue"":null},{""key"":""td"",""type"":""text"",""defaultValue"":null}]",Table,2,
